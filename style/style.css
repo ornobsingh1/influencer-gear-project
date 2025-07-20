@@ -12,6 +12,12 @@
 .flex {
   display: flex;
 }
+.text-primary {
+  color: #e02c6d;
+}
+.text-gray {
+  color: #3a3a3a;
+}
 
 /* navbar section */
 
@@ -35,6 +41,39 @@
   margin-right: 30px;
 }
 
+/* banner section */
+
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.banner-contant {
+  width: 450px;
+}
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.banner-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e02c6d;
+  color: white;
+  border-radius: 20px;
+}
+.banner-circle {
+  position: relative;
+  width: 100%;
+}
+.banner-camera {
+  position: absolute;
+  top: 115px;
+  right: 100px;
+}
+
 /* Responsive Query */
 
 @media screen and (max-width: 576px) {
@@ -47,5 +86,17 @@
   .manu-icon,
   .cart-icon {
     display: inline;
+  }
+  .banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-contant {
+    width: 100%;
+  }
+  .banner-camera {
+    top: 390px;
+    left: 0px;
+    width: 100%;
   }
 }
