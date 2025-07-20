@@ -74,6 +74,21 @@
   right: 100px;
 }
 
+/* brand section */
+
+.brand {
+  max-width: 85%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  padding: 25px 0px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 /* Responsive Query */
 
 @media screen and (max-width: 576px) {
@@ -97,6 +112,13 @@
   .banner-camera {
     top: 390px;
     left: 0px;
+    width: 100%;
+  }
+  .brand {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+  .brand-img {
     width: 100%;
   }
 }
