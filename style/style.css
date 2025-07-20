@@ -178,6 +178,7 @@
 @media screen and (max-width: 576px) {
   .navbar {
     display: flex;
+    align-items: center;
   }
   .nav-links {
     display: none;
