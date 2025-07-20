@@ -93,7 +93,7 @@
 
 .product-section {
   max-width: 80%;
-  margin: 50px auto;
+  margin: 80px auto;
 }
 .product-title {
   font-size: 2rem;
@@ -122,6 +122,29 @@
 .card-title {
   font-size: 1.7rem;
   font-weight: 600;
+}
+.product-seeMore {
+  color: #e02c6d;
+  text-align: end;
+  padding: 20px 0px;
+}
+
+/* feature section */
+
+.feature-section {
+  max-width: 85%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-contant {
+  width: 550px;
+}
+.feature-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /* Responsive Query */
@@ -158,5 +181,15 @@
   }
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .feature-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .feature-img {
+    width: 100%;
+  }
+  .feature-contant {
+    width: 100%;
   }
 }
