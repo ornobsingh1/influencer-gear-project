@@ -6,3 +6,46 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+
+/* shared style */
+
+.flex {
+  display: flex;
+}
+
+/* navbar section */
+
+.header {
+  max-width: 85%;
+  margin: 20px auto;
+}
+.navbar {
+  justify-content: space-between;
+}
+.manu-icon,
+.cart-icon {
+  display: none;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-item .nav-link {
+  color: black;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/* Responsive Query */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+  .manu-icon,
+  .cart-icon {
+    display: inline;
+  }
+}
